@@ -1,4 +1,6 @@
-# Football Match Analytics Project
+# Asset Performance & Tactical Attribution Framework :
+A Manchester United Case Study
+
 
 A comprehensive data analytics project leveraging PostgreSQL and Google Sheets to evaluate team performance, manager efficiency, and player metrics across a full season.
 
