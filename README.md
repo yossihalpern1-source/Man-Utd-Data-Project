@@ -5,7 +5,7 @@ A Manchester United Case Study
 A comprehensive data analytics project leveraging PostgreSQL and Google Sheets to evaluate team performance, manager efficiency, and player metrics across a full season.
 
 ## 📊 Project Components
-* **SQL Queries:** Check out the [queries.sql](./queries.sql) file in this repository to see the relational database schema, CTEs, and aggregate functions used for the analysis.
+* **SQL Queries:** Check out the [queries.sql](https://github.com/yossihalpern1-source/Man-Utd-Data-Project/blob/main/Queries.sql) file in this repository to see the relational database schema, CTEs, and aggregate functions used for the analysis.
 * **Executive Presentation:** View the project slide deck directly in GitHub via the [Project PDF](./Man Utd 25-26 Analysis.pdf) or access the live interactive [Google Slides Presentation](https://docs.google.com/presentation/d/17RxRufmURvLoZLcDbwGeiSuNLEgvYgKZvt2DIcwGXj0/edit?usp=sharing).
 
 ## 🗃️ Data Sources (Google Sheets)
