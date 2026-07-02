@@ -6,7 +6,7 @@ A comprehensive data analytics project leveraging PostgreSQL and Google Sheets t
 
 ## 📊 Project Components
 * **SQL Queries:** Check out the [queries.sql](https://github.com/yossihalpern1-source/Man-Utd-Data-Project/blob/main/Queries.sql) file in this repository to see the relational database schema, CTEs, and aggregate functions used for the analysis.
-* **Executive Presentation:** View the project slide deck directly in GitHub via the [Project PDF](./Man Utd 25-26 Analysis.pdf) or access the live interactive [Google Slides Presentation](https://docs.google.com/presentation/d/17RxRufmURvLoZLcDbwGeiSuNLEgvYgKZvt2DIcwGXj0/edit?usp=sharing).
+* **Executive Presentation:** View the project slide deck directly in GitHub via the [Project PDF](https://github.com/yossihalpern1-source/Man-Utd-Data-Project/blob/main/Man%20Utd%2025-26%20Analysis.pdf) or access the live interactive [Google Slides Presentation](https://docs.google.com/presentation/d/17RxRufmURvLoZLcDbwGeiSuNLEgvYgKZvt2DIcwGXj0/edit?usp=sharing).
 
 ## 🗃️ Data Sources (Google Sheets)
 The dataset is split across four relational structures:
