@@ -151,7 +151,7 @@ CONSTRAINT fk_match FOREIGN KEY(match_id)
 REFERENCES team_match_stats(match_id));
 
   
---top 10 players with most goal contributions 
+--Top 10 players with most goal contributions 
 SELECT player_name, SUM(assists) + SUM(goals) AS goal_contributions 
 FROM player_match_stats
 GROUP BY player_name
@@ -159,7 +159,7 @@ HAVING SUM(assists) IS NOT NULL and SUM(goals) IS NOT NULL
 ORDER BY goal_contributions DESC
 LIMIT 10;
 
--- top 15 players with lowest/highest contributions per 90
+-- Top 15 players with lowest/highest contributions per 90
 WITH player_season_totals AS 
 (SELECT p.player_name,
 SUM(p.goals) AS total_goals,
@@ -199,7 +199,7 @@ GROUP BY player_name
 HAVING SUM(assists) - SUM("xA") IS NOT NULL AND SUM("xA") > 0.3
 ORDER BY total_assists DESC;
 
--- players with the best pass accuracy with at least 200 passes in the the season and their position
+-- Players with the best pass accuracy with at least 200 passes in the the season and their position
 SELECT player_name, position, SUM(total_passes) AS total_passes,
 ROUND(CAST(AVG(pass_accuracy_pct)AS NUMERIC),2) AS avg_pass_accuracy,
 (SELECT ROUND(CAST(AVG(pass_accuracy_pct)AS NUMERIC),2)FROM player_match_stats WHERE position = 'D' )AS avg_pass_def,
@@ -241,7 +241,7 @@ WHERE total_minutes_played > 180
 ORDER BY contributions_per_90 DESC;
 
 
---dribbling
+--Dribbling
 SELECT 
     p.player_name,
     SUM(l.minutes_played) AS total_minutes,
@@ -610,7 +610,7 @@ HAVING SUM(l.minutes_played) >= 90
 ORDER BY impact_per_90 DESC;
 
 
---total goals and assists by position
+--Total goals and assists by position
 SELECT position, SUM(goals) + sum(assists) AS position_contributions
 FROM player_match_stats
 GROUP BY position
